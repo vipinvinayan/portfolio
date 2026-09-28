@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vipin Chandran A — Quantum ML & Computer Vision Researcher</title>
+  <meta name="description" content="Portfolio of Vipin Chandran A — MTech AI Researcher at Amrita Vishwa Vidyapeetham specializing in Quantum Machine Learning (QCNN), Flood Scene Understanding (FloodNet), Medical Imaging, and Computer Vision." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow-orb orb-cyan"></div>
+    <div class="glow-orb orb-indigo"></div>
+    <div class="glow-orb orb-emerald"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Vipin Chandran A Home">
+        <span class="logo-qubit">
+          <span class="qubit-ring"></span>
+          <span class="qubit-core">|ψ⟩</span>
+        </span>
+        <div class="brand-text">
+          <span class="brand-name">Vipin Chandran A</span>
+          <span class="brand-tag">Quantum AI · Computer Vision</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#lab-showcase" class="nav-link">Interactive Lab</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#leadership" class="nav-link">Honours</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cmd-btn" id="openCmdBtn" type="button" title="Open Command Palette (Ctrl+K)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="cmd-shortcut">Ctrl K</span>
+        </button>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle Dark/Light Mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>MTech AI Researcher @ Amrita School of Computing</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bridging <span class="gradient-text-cyan">Quantum Circuits</span> &amp; <span class="gradient-text-indigo">Deep Computer Vision</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Hi, I’m <strong>Vipin Chandran A</strong> — a Physics-trained AI Researcher building parameter-efficient 
+            <strong>Quantum Convolutional Neural Networks (QCNN)</strong> for medical diagnostics and high-resolution 
+            <strong>UAV Semantic Segmentation (FloodNet)</strong> for disaster response.
+          </p>
+
+          <!-- Research Interest Pills -->
+          <div class="interest-Readout" aria-label="Research Interests">
+            <span class="interest-chip"><span class="chip-dot cyan"></span>Quantum Machine Learning</span>
+            <span class="interest-chip"><span class="chip-dot emerald"></span>Flood Scene Understanding</span>
+            <span class="interest-chip"><span class="chip-dot indigo"></span>Medical Imaging AI</span>
+            <span class="interest-chip"><span class="chip-dot amber"></span>Computer Vision &amp; Pose Estimation</span>
+            <span class="interest-chip"><span class="chip-dot purple"></span>AI for Remote Sensing</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#research" class="btn btn-primary">
+              <span>Explore Research</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-secondary" id="printCvBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>View / Print Academic CV</span>
+            </button>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+
+          <!-- Quick Social & Location Bar -->
+          <div class="hero-meta-bar">
+            <div class="meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Kozhikode, Kerala / Coimbatore, India</span>
+            </div>
+            <span class="meta-divider">·</span>
+            <a href="mailto:vipinchandran.1737@gmail.com" class="meta-item meta-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>vipinchandran.1737@gmail.com</span>
+            </a>
+            <span class="meta-divider">·</span>
+            <a href="https://www.linkedin.com/in/vipin-chandran-8a367b139" target="_blank" rel="noopener noreferrer" class="meta-item meta-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn Profile ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Quantum-Vision Canvas Card -->
+        <div class="hero-visual reveal">
+          <div class="quantum-card">
+            <div class="quantum-card-header">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mono-label">quantum_vision_simulator.py</span>
+              <span class="live-badge">8-QUBIT STATE</span>
+            </div>
+
+            <div class="canvas-wrapper">
+              <canvas id="quantumCanvas" aria-label="Interactive Quantum Entanglement and Computer Vision Network Visualization"></canvas>
+              <div class="canvas-overlay-hud">
+                <div class="hud-metric">
+                  <span class="hud-key">CIRCUIT</span>
+                  <span class="hud-val">PennyLane 8-Qubit QCNN</span>
+                </div>
+                <div class="hud-metric">
+                  <span class="hud-key">LATENT DIM</span>
+                  <span class="hud-val">784 → 16 Autoencoder</span>
+                </div>
+                <div class="hud-metric">
+                  <span class="hud-key">SEGMENTATION</span>
+                  <span class="hud-val">FloodNet UAV Multi-Class</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Research Metrics Strip inside Visual Card -->
+            <div class="hero-stats-grid">
+              <div class="stat-box">
+                <div class="stat-number" data-count="8247" data-suffix="×">8,247×</div>
+                <div class="stat-label">Parameter Reduction vs. Classical CNN</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number" data-count="51" data-suffix="">51</div>
+                <div class="stat-label">Trainable Params in 8-Qubit QCNN</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number" data-count="19" data-prefix="#">#19</div>
+                <div class="stat-label">QS Global Rank (UNSW Offer)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH EXPERIENCE SECTION -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">01 // SCIENTIFIC INQUIRY</span>
+          <h2 class="section-title">Research Experience</h2>
+          <p class="section-desc">
+            Investigating the intersection of quantum information processing, medical imaging diagnostics, and aerial computer vision for disaster resilience.
+          </p>
+        </div>
+
+        <div class="research-cards">
+          <!-- Research 1: FloodNet -->
+          <article class="research-card featured-emerald reveal">
+            <div class="research-card-top">
+              <div class="research-meta">
+                <span class="badge badge-emerald">Current MTech Research · 2026 – Present</span>
+                <span class="institution-tag">Amrita Vishwa Vidyapeetham, Coimbatore — School of Computing</span>
+              </div>
+              <h3 class="research-role">FloodNet: High-Resolution UAV Flood Scene Understanding</h3>
+            </div>
+
+            <p class="research-summary">
+              Advancing automated post-disaster damage assessment through semantic segmentation on high-resolution unmanned aerial vehicle (UAV) imagery from the benchmark <strong>FloodNet</strong> dataset.
+            </p>
+
+            <div class="research-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">01</span>
+                <div>
+                  <strong>Multi-Class Semantic Segmentation</strong>
+                  <p>Developing deep learning models to pixel-accurately classify flood-affected regions including inundated areas, flooded vs. non-flooded roads, buildings, vehicles, and vegetation.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">02</span>
+                <div>
+                  <strong>Architecture Benchmarking</strong>
+                  <p>Evaluating and optimizing state-of-the-art encoder-decoder architectures — <strong>U-Net</strong>, <strong>DeepLab</strong>, and <strong>SegNet</strong> — for aerial remote sensing constraints.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">03</span>
+                <div>
+                  <strong>Emergency Response Systems</strong>
+                  <p>Translating aerial scene understanding into actionable spatial intelligence for AI-driven disaster management and rapid rescue routing.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-stack-row">
+              <span class="tech-pill">FloodNet Dataset</span>
+              <span class="tech-pill">U-Net</span>
+              <span class="tech-pill">DeepLab</span>
+              <span class="tech-pill">SegNet</span>
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">UAV Remote Sensing</span>
+            </div>
+          </article>
+
+          <!-- Research 2: QCNN Medical Imaging -->
+          <article class="research-card featured-cyan reveal">
+            <div class="research-card-top">
+              <div class="research-meta">
+                <span class="badge badge-cyan">MSc Dissertation Research · Jan – May 2026</span>
+                <span class="institution-tag">Amrita Vishwa Vidyapeetham, Coimbatore</span>
+              </div>
+              <h3 class="research-role">Quantum AI for Medical Imaging — 8-Qubit QCNN on DermaMNIST</h3>
+              <p class="supervisors-note">
+                Supervised by <strong>Dr. Vipin Venugopal</strong> (Amrita School of AI) &amp; <strong>Dr. Murugadass K.</strong> · Presented at <strong>NCRTST-2026</strong> (IIT Madras &amp; PSG Tech)
+              </p>
+            </div>
+
+            <p class="research-summary">
+              Designed and implemented a hybrid <strong>8-qubit Quantum Convolutional Neural Network (QCNN)</strong> using PennyLane and PyTorch for binary skin lesion classification (<em>Actinic Keratoses [AKIEC] vs. Basal Cell Carcinoma [BCC]</em>) on the DermaMNIST dataset.
+            </p>
+
+            <div class="research-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">01</span>
+                <div>
+                  <strong>Dimensionality Compression Pipeline (784 → 16)</strong>
+                  <p>Engineered a classical autoencoder reducing 28×28 input images (784 features) into a compact 16-dimensional latent vector suitable for amplitude/angle encoding on an 8-qubit register.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">02</span>
+                <div>
+                  <strong>8,247× Parameter Reduction with Superior Accuracy</strong>
+                  <p>Achieved <strong>~60% test accuracy</strong> with only <strong>51 trainable quantum parameters</strong>, outperforming the classical CNN baseline (~55% accuracy using <strong>420,610 parameters</strong>).</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">03</span>
+                <div>
+                  <strong>National Conference Poster Presentation</strong>
+                  <p>Presented research findings at NCRTST-2026, jointly conducted by IIT Madras and PSG College of Technology, Coimbatore.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-stack-row">
+              <span class="tech-pill">PennyLane</span>
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">8-Qubit QCNN</span>
+              <span class="tech-pill">Classical Autoencoder</span>
+              <span class="tech-pill">DermaMNIST</span>
+              <span class="tech-pill">Quantum ML</span>
+            </div>
+          </article>
+
+          <!-- Research 3: NIT Calicut Summer Intern -->
+          <article class="research-card featured-indigo reveal">
+            <div class="research-card-top">
+              <div class="research-meta">
+                <span class="badge badge-indigo">Summer Research Intern · May – Jun 2025</span>
+                <span class="institution-tag">National Institute of Technology (NIT), Calicut</span>
+              </div>
+              <h3 class="research-role">Markerless Human Hand Pose Estimation &amp; Industry 5.0</h3>
+            </div>
+
+            <p class="research-summary">
+              Conducted computer vision research on markerless anatomical keypoint tracking of the human hand using deep neural architectures at NIT Calicut.
+            </p>
+
+            <div class="research-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">01</span>
+                <div>
+                  <strong>DeepLabCut Markerless Tracking</strong>
+                  <p>Built and fine-tuned pose estimation models for articulated hand joints using the DeepLabCut framework without physical optical markers.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">02</span>
+                <div>
+                  <strong>Video Data Preprocessing &amp; Model Fine-Tuning</strong>
+                  <p>Curated labeled frame datasets, executed data augmentation pipelines, and evaluated spatial keypoint confidence across dynamic hand movements.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">03</span>
+                <div>
+                  <strong>Industry 5.0 Workshop</strong>
+                  <p>Completed an intensive 10-day workshop on human-centric Industry 5.0 technologies, smart robotics, and cyber-physical systems at NIT Calicut.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-stack-row">
+              <span class="tech-pill">DeepLabCut</span>
+              <span class="tech-pill">Pose Estimation</span>
+              <span class="tech-pill">Computer Vision</span>
+              <span class="tech-pill">Video Preprocessing</span>
+              <span class="tech-pill">Industry 5.0</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE RESEARCH LAB SHOWCASE -->
+    <section class="section section-alt" id="lab-showcase">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">02 // INTERACTIVE BENCHMARKS</span>
+          <h2 class="section-title">Research Architecture Deep-Dive</h2>
+          <p class="section-desc">
+            Interact with the empirical benchmarks from my MSc Quantum AI dissertation and MTech FloodNet segmentation pipeline.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+          <!-- Interactive Widget 1: QCNN vs Classical CNN Benchmark -->
+          <div class="lab-panel reveal">
+            <div class="lab-panel-header">
+              <div>
+                <span class="mono-tag cyan">EXPERIMENT_01 // DERMAMNIST (AKIEC vs. BCC)</span>
+                <h3>Hybrid 8-Qubit QCNN vs. Classical CNN</h3>
+              </div>
+              <div class="scale-toggle-group" role="group" aria-label="Comparison view mode">
+                <button type="button" class="scale-btn active" data-qview="metrics">Benchmark</button>
+                <button type="button" class="scale-btn" data-qview="pipeline">Circuit Pipeline</button>
+              </div>
+            </div>
+
+            <!-- View A: Metrics Comparison -->
+            <div class="qview-pane active" id="qview-metrics">
+              <div class="comparison-bars">
+                <div class="comp-row">
+                  <div class="comp-label-row">
+                    <span class="comp-model-name">
+                      <span class="dot-indicator cyan"></span>
+                      <strong>8-Qubit Hybrid QCNN (Ours)</strong>
+                    </span>
+                    <span class="comp-stat-badge cyan">51 Params · ~60% Accuracy</span>
+                  </div>
+                  <div class="dual-progress">
+                    <div class="metric-line">
+                      <span class="m-name">Test Accuracy</span>
+                      <div class="bar-track">
+                        <div class="bar-fill fill-cyan" style="width: 60%"></div>
+                      </div>
+                      <span class="m-val">~60.0%</span>
+                    </div>
+                    <div class="metric-line">
+                      <span class="m-name">Parameter Footprint (Log)</span>
+                      <div class="bar-track">
+                        <div class="bar-fill fill-emerald" style="width: 8%"></div>
+                      </div>
+                      <span class="m-val">51 params</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comp-row">
+                  <div class="comp-label-row">
+                    <span class="comp-model-name">
+                      <span class="dot-indicator muted"></span>
+                      <strong>Classical CNN Baseline</strong>
+                    </span>
+                    <span class="comp-stat-badge muted">420,610 Params · ~55% Accuracy</span>
+                  </div>
+                  <div class="dual-progress">
+                    <div class="metric-line">
+                      <span class="m-name">Test Accuracy</span>
+                      <div class="bar-track">
+                        <div class="bar-fill fill-muted" style="width: 55%"></div>
+                      </div>
+                      <span class="m-val">~55.0%</span>
+                    </div>
+                    <div class="metric-line">
+                      <span class="m-name">Parameter Footprint (Log)</span>
+                      <div class="bar-track">
+                        <div class="bar-fill fill-amber" style="width: 100%"></div>
+                      </div>
+                      <span class="m-val">420,610 params</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="efficiency-callout">
+                <div class="eff-number">8,247×</div>
+                <div class="eff-text">
+                  <strong>Parameter Compression Ratio</strong>
+                  <p>By pairing a 784→16 classical autoencoder with convolutional &amp; pooling quantum gates across 8 qubits, the QCNN achieves +5% higher accuracy while eliminating 99.988% of trainable weights.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- View B: Pipeline Architecture -->
+            <div class="qview-pane" id="qview-pipeline">
+              <div class="pipeline-steps">
+                <div class="pipe-node">
+                  <span class="pipe-step-num">STAGE 01</span>
+                  <strong>DermaMNIST Input</strong>
+                  <code>28 × 28 px (784-D)</code>
+                  <p>Dermoscopic lesions: Actinic Keratoses (AKIEC) vs. Basal Cell Carcinoma (BCC).</p>
+                </div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-node">
+                  <span class="pipe-step-num">STAGE 02</span>
+                  <strong>Classical Autoencoder</strong>
+                  <code>784 → 16 Latent Dim</code>
+                  <p>Non-linear dimensionality reduction preserving diagnostic lesion morphology.</p>
+                </div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-node highlight-node">
+                  <span class="pipe-step-num">STAGE 03</span>
+                  <strong>8-Qubit QCNN Circuit</strong>
+                  <code>51 Trainable Params</code>
+                  <p>PennyLane variational quantum convolution + pooling layers with PyTorch autograd.</p>
+                </div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-node">
+                  <span class="pipe-step-num">STAGE 04</span>
+                  <strong>Pauli-Z Readout</strong>
+                  <code>~60% Test Accuracy</code>
+                  <p>Binary classification expectation value outperforming 420k-param CNN.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Widget 2: FloodNet Segmentation Inspector -->
+          <div class="lab-panel reveal">
+            <div class="lab-panel-header">
+              <div>
+                <span class="mono-tag emerald">EXPERIMENT_02 // FLOODNET UAV SEGMENTATION</span>
+                <h3>Aerial Disaster Scene Architecture Explorer</h3>
+              </div>
+              <div class="arch-selector" role="group" aria-label="Select Segmentation Architecture">
+                <button type="button" class="arch-btn active" data-arch="unet">U-Net</button>
+                <button type="button" class="arch-btn" data-arch="deeplab">DeepLab</button>
+                <button type="button" class="arch-btn" data-arch="segnet">SegNet</button>
+              </div>
+            </div>
+
+            <div class="floodnet-simulator">
+              <!-- Simulated UAV Aerial Segmentation Grid -->
+              <div class="uav-viewport" id="uavViewport">
+                <div class="uav-grid-map">
+                  <div class="uav-zone zone-water" data-class="Flooded Area">
+                    <span>Flooded Zone (Water)</span>
+                  </div>
+                  <div class="uav-zone zone-road" data-class="Submerged / Clear Road">
+                    <span>Road Network</span>
+                  </div>
+                  <div class="uav-zone zone-building" data-class="Building Footprint">
+                    <span>Structures / Roofs</span>
+                  </div>
+                  <div class="uav-zone zone-veg" data-class="Vegetation Canopy">
+                    <span>Vegetation</span>
+                  </div>
+                </div>
+                <div class="uav-scanline"></div>
+              </div>
+
+              <div class="floodnet-details">
+                <div class="arch-info-card" id="archInfoCard">
+                  <div class="arch-badge-row">
+                    <span class="arch-name" id="archTitle">U-Net Encoder–Decoder</span>
+                    <span class="arch-focus" id="archFocus">Skip-Connection Boundary Precision</span>
+                  </div>
+                  <p id="archDescription">
+                    Symmetric encoder-decoder with multi-scale skip connections that preserve fine-grained spatial boundaries between flooded roads, inundated buildings, and vegetation in high-resolution UAV imagery.
+                  </p>
+                </div>
+
+                <div class="class-legend" aria-label="Semantic Segmentation Classes">
+                  <button type="button" class="legend-chip active" data-highlight="all">All Classes</button>
+                  <button type="button" class="legend-chip" data-highlight="water"><span class="l-dot water"></span>Flooded Areas</button>
+                  <button type="button" class="legend-chip" data-highlight="road"><span class="l-dot road"></span>Roads</button>
+                  <button type="button" class="legend-chip" data-highlight="building"><span class="l-dot building"></span>Buildings</button>
+                  <button type="button" class="legend-chip" data-highlight="veg"><span class="l-dot veg"></span>Vegetation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS BENTO SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">03 // ENGINEERING &amp; RESEARCH ARTIFACTS</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">
+            Spanning computer vision, quantum phase-space mechanics, predictive machine learning, and voice-actuated embedded robotics.
+          </p>
+        </div>
+
+        <!-- Category Filter Bar -->
+        <div class="filter-bar reveal" role="tablist" aria-label="Filter projects by domain">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button type="button" class="filter-btn" data-filter="cv-ai">Computer Vision &amp; GenAI</button>
+          <button type="button" class="filter-btn" data-filter="quantum">Quantum Computing</button>
+          <button type="button" class="filter-btn" data-filter="ml-data">Machine Learning &amp; Data</button>
+          <button type="button" class="filter-btn" data-filter="robotics">Robotics &amp; Embedded</button>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="robotics" data-project-id="voice-robot">
+            <div class="project-card-top">
+              <span class="project-domain robotics">Robotics &amp; Embedded · NIT Calicut</span>
+              <span class="project-index">01</span>
+            </div>
+            <h3 class="project-title">Voice-Controlled Object-Picking Robot</h3>
+            <p class="project-excerpt">
+              Wheeled autonomous manipulator utilizing two DC drive motors and dual servo robotic arms controlled via real-time voice commands on an Arduino ESP8266 microcontroller.
+            </p>
+            <div class="project-tags">
+              <span>Arduino ESP8266</span>
+              <span>Voice Recognition</span>
+              <span>DC &amp; Servo Motors</span>
+              <span>Embedded C++</span>
+            </div>
+            <button type="button" class="project-inspect-btn" data-open-modal="voice-robot">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="cv-ai" data-project-id="recipe-ai">
+            <div class="project-card-top">
+              <span class="project-domain cv-ai">Computer Vision &amp; GenAI</span>
+              <span class="project-index">02</span>
+            </div>
+            <h3 class="project-title">AI-Powered Recipe Generation via Ingredient Image Analysis</h3>
+            <p class="project-excerpt">
+              End-to-end computer vision and generative AI pipeline trained on 2,000+ ingredient images to classify raw food items and synthesize tailored culinary recipes via OpenAI API.
+            </p>
+            <div class="project-tags">
+              <span>Deep Learning</span>
+              <span>OpenAI API</span>
+              <span>Image Classification</span>
+              <span>2,000-Image Dataset</span>
+            </div>
+            <button type="button" class="project-inspect-btn" data-open-modal="recipe-ai">
+              <span>Inspect Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="quantum" data-project-id="phase-space">
+            <div class="project-card-top">
+              <span class="project-domain quantum">Quantum Information &amp; Physics</span>
+              <span class="project-index">03</span>
+            </div>
+            <h3 class="project-title">Quantum Computing Study — Phase Space Representations</h3>
+            <p class="project-excerpt">
+              Foundational theoretical and computational investigation of quasi-probability distributions in quantum mechanics: Wigner functions, Husimi Q-functions, and POVMs.
+            </p>
+            <div class="project-tags">
+              <span>Wigner Functions</span>
+              <span>Husimi Q-Function</span>
+              <span>POVMs</span>
+              <span>Quantum Mechanics</span>
+            </div>
+            <button type="button" class="project-inspect-btn" data-open-modal="phase-space">
+              <span>Inspect Study</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="ml-data" data-project-id="ripple-effect">
+            <div class="project-card-top">
+              <span class="project-domain ml-data">Predictive Analytics &amp; Classification</span>
+              <span class="project-index">04</span>
+            </div>
+            <h3 class="project-title">The Ripple Effect — Employee Turnover Analysis</h3>
+            <p class="project-excerpt">
+              Comprehensive exploratory data analysis (EDA) and supervised classification modeling to uncover attrition drivers and formulate data-driven retention strategies.
+            </p>
+            <div class="project-tags">
+              <span>Classification Models</span>
+              <span>Exploratory Data Analysis</span>
+              <span>Scikit-learn</span>
+              <span>Risk Mitigation</span>
+            </div>
+            <button type="button" class="project-inspect-btn" data-open-modal="ripple-effect">
+              <span>Inspect Analysis</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-category="ml-data" data-project-id="salary-prediction">
+            <div class="project-card-top">
+              <span class="project-domain ml-data">Supervised Machine Learning</span>
+              <span class="project-index">05</span>
+            </div>
+            <h3 class="project-title">Multi-Regression Salary Prediction Model</h3>
+            <p class="project-excerpt">
+              Supervised regression pipeline benchmarking multiple algorithms with systematic hyperparameter tuning and rigorous evaluation across RMSE, MAE, and R-squared metrics.
+            </p>
+            <div class="project-tags">
+              <span>Regression Algorithms</span>
+              <span>Hyperparameter Tuning</span>
+              <span>RMSE / MAE / R²</span>
+              <span>Python</span>
+            </div>
+            <button type="button" class="project-inspect-btn" data-open-modal="salary-prediction">
+              <span>Inspect Model</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-category="robotics" data-project-id="distance-sensor">
+            <div class="project-card-top">
+              <span class="project-domain robotics">Embedded Systems &amp; IoT</span>
+              <span class="project-index">06</span>
+            </div>
+            <h3 class="project-title">Real-Time Ultrasonic Distance Measurement Sensor</h3>
+            <p class="project-excerpt">
+              Precision proximity detection and alerting system built with Arduino UNO, HC-SR04 ultrasonic transducer, real-time LCD telemetry readout, potentiometer calibration, and piezo buzzer.
+            </p>
+            <div class="project-tags">
+              <span>Arduino UNO</span>
+              <span>HC-SR04 Ultrasonic</span>
+              <span>LCD Telemetry</span>
+              <span>Proximity Alert</span>
+            </div>
+            <button type="button" class="project-inspect-btn" data-open-modal="distance-sensor">
+              <span>Inspect Hardware</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">04 // TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Skills &amp; Domain Stack</h2>
+          <p class="section-desc">
+            Combining theoretical physics rigor with modern deep learning frameworks, quantum SDKs, and embedded hardware prototyping.
+          </p>
+        </div>
+
+        <div class="skills-bento">
+          <div class="skill-cluster reveal">
+            <div class="cluster-header">
+              <span class="cluster-icon cyan">⟨ψ|</span>
+              <div>
+                <h3>Quantum Computing &amp; QML</h3>
+                <span class="cluster-sub">Variational Circuits &amp; Hybrid Neural Nets</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-tag primary">PennyLane</span>
+              <span class="skill-tag primary">Quantum Circuit Design</span>
+              <span class="skill-tag primary">8-Qubit QCNN</span>
+              <span class="skill-tag">Qiskit (Foundational)</span>
+              <span class="skill-tag">Qubit-Based ML</span>
+              <span class="skill-tag">Wigner &amp; Husimi Phase Space</span>
+              <span class="skill-tag">POVMs</span>
+            </div>
+          </div>
+
+          <div class="skill-cluster reveal">
+            <div class="cluster-header">
+              <span class="cluster-icon indigo">◈</span>
+              <div>
+                <h3>Computer Vision &amp; Remote Sensing</h3>
+                <span class="cluster-sub">Medical Diagnostics, Pose &amp; UAV Segmentation</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-tag primary">Semantic Segmentation</span>
+              <span class="skill-tag primary">U-Net / DeepLab / SegNet</span>
+              <span class="skill-tag primary">FloodNet UAV Analysis</span>
+              <span class="skill-tag">DeepLabCut (Pose Estimation)</span>
+              <span class="skill-tag">YOLO Object Detection</span>
+              <span class="skill-tag">Medical Image Classification</span>
+              <span class="skill-tag">Disaster AI</span>
+            </div>
+          </div>
+
+          <div class="skill-cluster reveal">
+            <div class="cluster-header">
+              <span class="cluster-icon emerald">λ</span>
+              <div>
+                <h3>Programming, Deep Learning &amp; Data</h3>
+                <span class="cluster-sub">Core Frameworks &amp; Statistical Modeling</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-tag primary">Python</span>
+              <span class="skill-tag primary">PyTorch</span>
+              <span class="skill-tag primary">TensorFlow</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">Autoencoders</span>
+              <span class="skill-tag">Regression &amp; Classification</span>
+              <span class="skill-tag">EDA &amp; Feature Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-cluster reveal">
+            <div class="cluster-header">
+              <span class="cluster-icon amber">⚙</span>
+              <div>
+                <h3>Hardware, Embedded &amp; Platforms</h3>
+                <span class="cluster-sub">Microcontrollers, Sensors &amp; Research Workflow</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-tag primary">Arduino UNO</span>
+              <span class="skill-tag primary">ESP8266</span>
+              <span class="skill-tag">Servo &amp; DC Motor Control</span>
+              <span class="skill-tag">HC-SR04 Ultrasonic Sensors</span>
+              <span class="skill-tag">Google Colab</span>
+              <span class="skill-tag">Jupyter / LaTeX / MS Office</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">05 // ACADEMIC FOUNDATION</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-desc">
+            A progression from Theoretical &amp; Experimental Physics to Advanced Data Analytics and MTech Artificial Intelligence research.
+          </p>
+        </div>
+
+        <div class="edu-cert-layout">
+          <!-- Left Column: Academic Timeline -->
+          <div class="timeline-col">
+            <h3 class="col-heading">Academic Degrees</h3>
+            <div class="timeline">
+              <!-- MTech AI -->
+              <div class="timeline-item reveal">
+                <div class="timeline-marker active"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-date">2026 – 2028</span>
+                    <span class="timeline-status">Pursuing</span>
+                  </div>
+                  <h4>MTech in Artificial Intelligence</h4>
+                  <p class="timeline-inst">Amrita Vishwa Vidyapeetham, Coimbatore — School of Computing</p>
+                  <p class="timeline-detail">
+                    <strong>Research Focus:</strong> FloodNet — deep learning-based flood scene understanding and semantic segmentation on high-resolution post-flood UAV aerial imagery.
+                  </p>
+                </div>
+              </div>
+
+              <!-- MSc Physics -->
+              <div class="timeline-item reveal">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-date">2024 – 2026</span>
+                    <span class="timeline-status">Completed</span>
+                  </div>
+                  <h4>MSc in Physics</h4>
+                  <p class="timeline-inst">Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                  <p class="timeline-detail">
+                    <strong>Dissertation:</strong> <em>Skin Lesion Classification using Quantum Convolutional Neural Networks (QCNN)</em>.<br />
+                    <strong>Supervisors:</strong> Dr. Vipin Venugopal (Amrita School of AI) &amp; Dr. Murugadass K.<br />
+                    <strong>Milestone:</strong> Presented research at National Conference on Recent Trends in Science &amp; Technology (NCRTST-2026).
+                  </p>
+                </div>
+              </div>
+
+              <!-- PG Diploma -->
+              <div class="timeline-item reveal">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-date">2023 – 2024</span>
+                    <span class="timeline-score">Score: 78.5%</span>
+                  </div>
+                  <h4>PG Diploma in Data Analytics &amp; Artificial Intelligence</h4>
+                  <p class="timeline-inst">NIELIT Calicut (Government of India)</p>
+                  <p class="timeline-detail">
+                    Intensive postgraduate training covering machine learning, deep learning, data preprocessing, neural networks, and scientific Python programming.
+                  </p>
+                </div>
+              </div>
+
+              <!-- BSc Physics -->
+              <div class="timeline-item reveal">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <span class="timeline-date">2017 – 2021</span>
+                    <span class="timeline-status">University of Calicut</span>
+                  </div>
+                  <h4>BSc in Physics</h4>
+                  <p class="timeline-inst">Zamorin's Guruvayurappan College, Kozhikode</p>
+                  <p class="timeline-detail">
+                    Rigorous foundation in classical mechanics, quantum mechanics, statistical physics, and mathematical methods. Served as an active National Cadet Corps (NCC) cadet for 3 years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Certifications & Courses -->
+          <div class="certs-col">
+            <h3 class="col-heading">Certifications &amp; Specialized Courses</h3>
+            <div class="certs-list">
+              <div class="cert-card reveal">
+                <div class="cert-icon">DL</div>
+                <div class="cert-body">
+                  <h4>Deep Learning Specialisation</h4>
+                  <p>Coursera — Andrew Ng / DeepLearning.AI</p>
+                </div>
+                <span class="cert-badge">Neural Nets &amp; CNNs</span>
+              </div>
+
+              <div class="cert-card reveal">
+                <div class="cert-icon">QC</div>
+                <div class="cert-body">
+                  <h4>Quantum Computing Using Python</h4>
+                  <p>Udemy Professional Certification</p>
+                </div>
+                <span class="cert-badge">Quantum Circuits</span>
+              </div>
+
+              <div class="cert-card reveal">
+                <div class="cert-icon">CV</div>
+                <div class="cert-body">
+                  <h4>YOLO &amp; Deep Learning</h4>
+                  <p>Udemy Computer Vision Track</p>
+                </div>
+                <span class="cert-badge">Object Detection</span>
+              </div>
+
+              <div class="cert-card reveal">
+                <div class="cert-icon">CD</div>
+                <div class="cert-body">
+                  <h4>Basic Computing Certification</h4>
+                  <p>CDAC (Centre for Development of Advanced Computing)</p>
+                </div>
+                <span class="cert-badge">Govt. of India</span>
+              </div>
+
+              <div class="cert-card reveal">
+                <div class="cert-icon">DC</div>
+                <div class="cert-body">
+                  <h4>Diploma in Computer Applications (DCA)</h4>
+                  <p>Keltron — Government of Kerala Undertaking</p>
+                </div>
+                <span class="cert-badge">Software Systems</span>
+              </div>
+
+              <div class="cert-card reveal">
+                <div class="cert-icon">EN</div>
+                <div class="cert-body">
+                  <h4>IELTS Academic</h4>
+                  <p>International English Language Testing System</p>
+                </div>
+                <span class="cert-badge highlight">Band 6.5+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFERENCES, HONOURS & LEADERSHIP SECTION -->
+    <section class="section section-alt" id="leadership">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">06 // RECOGNITION &amp; IMPACT</span>
+          <h2 class="section-title">Conferences, Honours &amp; Leadership</h2>
+          <p class="section-desc">
+            Global academic recognition, national research presentations, and uniformed leadership in community service.
+          </p>
+        </div>
+
+        <div class="honours-grid">
+          <div class="honour-card highlight-gold reveal">
+            <div class="honour-top">
+              <span class="honour-tag">GLOBAL ACADEMIC OFFER · QS RANK #19</span>
+              <span class="honour-year">Autumn 2026</span>
+            </div>
+            <h3>UNSW Australia Postgraduate Letter of Offer</h3>
+            <p>
+              Received a formal Letter of Offer from the <strong>University of New South Wales (UNSW Australia)</strong> — ranked <strong>#19 globally in QS World University Rankings</strong> — for admission to a Postgraduate programme at the UNSW Bengaluru campus.
+            </p>
+          </div>
+
+          <div class="honour-card reveal">
+            <div class="honour-top">
+              <span class="honour-tag">NATIONAL RESEARCH PRESENTATION</span>
+              <span class="honour-year">NCRTST-2026</span>
+            </div>
+            <h3>Poster Presentation — IIT Madras &amp; PSG Tech Joint Conference</h3>
+            <p>
+              Presented MSc dissertation poster on <em>8-Qubit Quantum Convolutional Neural Networks for Skin Lesion Classification</em> at the National Conference on Recent Trends in Science &amp; Technology (NCRTST-2026), conducted at Amrita Vishwa Vidyapeetham in collaboration with <strong>IIT Madras</strong> and <strong>PSG College of Technology, Coimbatore</strong>.
+            </p>
+          </div>
+
+          <div class="honour-card reveal">
+            <div class="honour-top">
+              <span class="honour-tag">INTERNATIONAL CONFERENCE</span>
+              <span class="honour-year">Coimbatore</span>
+            </div>
+            <h3>International Conference on Sustainable Technology &amp; Energy</h3>
+            <p>
+              Attended and engaged with interdisciplinary research tracks at the International Conference on Sustainable Technology &amp; Energy, jointly organized by <strong>IIT Madras</strong> and <strong>PSG College of Technology</strong>.
+            </p>
+          </div>
+
+          <div class="honour-card reveal">
+            <div class="honour-top">
+              <span class="honour-tag">UNIFORMED LEADERSHIP · 3 YEARS</span>
+              <span class="honour-year">2017 – 2021</span>
+            </div>
+            <h3>National Cadet Corps (NCC) &amp; Civic Outreach</h3>
+            <p>
+              Served as an active <strong>NCC Cadet for 3 years</strong> participating in discipline training, leadership camps, and community outreach. Volunteered in the <strong>Students Police Cadet Programme</strong>, organizing anti-drug abuse awareness campaigns and free food distribution drives for homeless individuals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-info">
+            <span class="section-eyebrow">07 // COLLABORATION &amp; OPPORTUNITIES</span>
+            <h2 class="section-title">Let’s Build the Next Frontier in AI &amp; Quantum</h2>
+            <p class="contact-lead">
+              Whether you’re looking to collaborate on <strong>Quantum Machine Learning</strong>, <strong>Medical Image Analysis</strong>, or <strong>Aerial Computer Vision (FloodNet)</strong>, or discussing PhD / Research Engineer opportunities, I’d love to connect.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <div class="c-icon">@</div>
+                <div class="c-details">
+                  <span class="c-label">Email Address</span>
+                  <a href="mailto:vipinchandran.1737@gmail.com" class="c-value">vipinchandran.1737@gmail.com</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="vipinchandran.1737@gmail.com" title="Copy Email">
+                  Copy
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon">☎</div>
+                <div class="c-details">
+                  <span class="c-label">Phone / WhatsApp</span>
+                  <a href="tel:+917902386639" class="c-value">+91 7902386639</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="+91 7902386639" title="Copy Phone">
+                  Copy
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon">in</div>
+                <div class="c-details">
+                  <span class="c-label">LinkedIn Network</span>
+                  <a href="https://www.linkedin.com/in/vipin-chandran-8a367b139" target="_blank" rel="noopener noreferrer" class="c-value">
+                    linkedin.com/in/vipin-chandran-8a367b139 ↗
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon">⌖</div>
+                <div class="c-details">
+                  <span class="c-label">Base Locations</span>
+                  <span class="c-value">Kozhikode, Kerala · Coimbatore, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Composer -->
+          <form class="contact-form" id="contactForm">
+            <h3>Send a Direct Inquiry</h3>
+            <div class="form-group">
+              <label for="senderName">Your Name / Institution</label>
+              <input type="text" id="senderName" name="senderName" required placeholder="Dr. Jane Doe — Research Lab" />
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="senderEmail" required placeholder="jane@university.edu" />
+            </div>
+            <div class="form-group">
+              <label for="inquiryTopic">Topic</label>
+              <select id="inquiryTopic" name="inquiryTopic">
+                <option value="Research Collaboration (QML / Computer Vision)">Research Collaboration (QML / Computer Vision)</option>
+                <option value="R&D Internship / AI Engineer Role">R&amp;D Internship / AI Engineer Role</option>
+                <option value="FloodNet / Remote Sensing Discussion">FloodNet / Remote Sensing Discussion</option>
+                <option value="General Academic Inquiry">General Academic Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="senderMessage" rows="4" required placeholder="Hi Vipin, I came across your 8-qubit QCNN and FloodNet research..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Compose Email in Mail Client</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+            <p class="form-Status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-name">Vipin Chandran A</span>
+        <p>MTech AI Researcher · Quantum Machine Learning &amp; Computer Vision</p>
+      </div>
+      <div class="footer-right">
+        <span>Press <kbd>Ctrl</kbd> + <kbd>K</kbd> for Quick Command Palette</span>
+        <span>·</span>
+        <a href="#hero" class="back-to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL (<dialog>) -->
+  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <span class="modal-badge" id="modalBadge">Category</span>
+        <button type="button" class="modal-close" id="closeProjectModal" aria-label="Close modal">✕</button>
+      </div>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <p class="modal-subtitle" id="modalSubtitle"></p>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+  </dialog>
+
+  <!-- COMMAND PALETTE MODAL (<dialog>) -->
+  <dialog class="cmd-modal" id="cmdModal" aria-label="Command Palette">
+    <div class="cmd-inner">
+      <div class="cmd-search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="cmdInput" placeholder="Type a command or search sections (e.g., QCNN, FloodNet, Email, Theme)..." autocomplete="off" />
+        <kbd class="esc-hint" id="closeCmdBtn">ESC</kbd>
+      </div>
+      <div class="cmd-list" id="cmdList" role="listbox"></div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
